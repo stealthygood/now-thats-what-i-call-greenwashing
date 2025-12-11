@@ -49,3 +49,14 @@
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
 }
+
+.sources-list a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.sources-list a:hover {
+    color: var(--color-neon-yellow);
+    text-decoration: underline;
+}
