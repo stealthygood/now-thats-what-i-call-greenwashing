@@ -26,7 +26,8 @@ const TRACKS = [
     year: "2009",
     duration: "2:15",
     description: "Coca-Cola launched the 'PlantBottle' claiming it was eco-friendly. In reality, it was still up to 70% petroleum-based plastic and indistinguishable from regular PET in oceans. It was a marketing stunt, not a solution.",
-    source: "The Guardian"
+    source: "The Guardian",
+    audioEmbedUrl: "https://suno.com/embed/db1c1c7a-971e-437d-bcb5-bf88cb60a9c7"
   },
   {
     id: 3,
@@ -35,7 +36,8 @@ const TRACKS = [
     year: "2018",
     duration: "4:01",
     description: "Coke's 'World Without Waste' campaign promises to collect one bottle for every one sold by 2030. Independent audits show they are nowhere close to this goal, while their plastic production actually INCREASED.",
-    source: "Reuters Investigation"
+    source: "Reuters Investigation",
+    audioEmbedUrl: "https://suno.com/embed/3b212721-4ce0-4b6a-86b7-cf9f4e8d4d90"
   },
   {
     id: 4,
@@ -53,7 +55,8 @@ const TRACKS = [
     year: "Ongoing",
     duration: "∞",
     description: "While publicly promoting recycling, Coca-Cola has spent millions lobbying against Bottle Bills (Deposit Return Schemes) which are proven to increase recycling rates. They claim to support sustainability while funding groups that fight regulation.",
-    source: "The Intercept"
+    source: "The Intercept",
+    audioEmbedUrl: "https://suno.com/embed/ba25fc16-dbda-4009-bc06-e32cb06ca8f3"
   }
 ];
 
