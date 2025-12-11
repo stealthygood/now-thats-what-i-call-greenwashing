@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
             <div className="hero-marketing-bar">
-                <p>FEATURING ALL YOUR FAVORITE CORPORATE LIES!</p>
+                <p>FEATURING COCA-COLA'S GREATEST CORPORATE LIES!</p>
             </div>
         </div>
     );
