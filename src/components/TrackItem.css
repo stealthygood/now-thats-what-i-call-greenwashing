@@ -1,0 +1,57 @@
+/* Track Items */
+.track-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px dotted #444;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.track-item:hover {
+    background: var(--color-lime);
+    color: black;
+}
+
+.track-item:hover .track-year {
+    color: #333;
+}
+
+.track-number {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 30px;
+    text-align: right;
+    color: var(--color-hot-pink);
+}
+
+.track-item:hover .track-number {
+    color: var(--color-coke-red);
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.track-artist {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.track-year {
+    color: var(--color-cyan);
+    font-weight: bold;
+}
+
+.track-duration {
+    font-family: monospace;
+    margin-left: 1rem;
+}

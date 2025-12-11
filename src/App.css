@@ -1,0 +1,50 @@
+/* Main App Layout */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+/* CD Case Container Effect */
+.cd-case {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--color-cd-gray);
+  border-radius: 10px;
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+/* The 'Spine' of the CD case on the left */
+.cd-spine {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25px;
+  background: linear-gradient(90deg, #444, #111);
+  border-right: 2px solid #000;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cd-spine-text {
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.cd-content {
+  margin-left: 25px;
+  /* Space for spine */
+  padding: 0;
+}

@@ -1,0 +1,142 @@
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: radial-gradient(circle, #ffffff 0%, #f0f0f0 100%);
+    border-bottom: 2px solid var(--color-cd-gray);
+    position: relative;
+}
+
+.album-art-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg);
+    /* Jaunty angle */
+    border: 5px solid white;
+}
+
+.album-art {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Stickers */
+.sticker {
+    position: absolute;
+    border-radius: 50%;
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    transform: rotate(15deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.sticker-tv {
+    top: -10px;
+    right: -10px;
+    background: var(--color-neon-yellow);
+    color: var(--color-coke-red);
+    border: 2px solid var(--color-coke-red);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 2s infinite;
+}
+
+.sticker-pollution {
+    bottom: 20px;
+    left: -20px;
+    background: var(--color-coke-red);
+    color: white;
+    border: 2px dashed white;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-10deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title Overlay - optional heavily styled text overlay if image text isn't enough */
+/* For now, relying mostly on image but adding accessible text or overlays if needed */
+.hero-title-overlay {
+    /* Creating a visually hidden but accessible title structure, 
+     OR overlaying it on top if the image doesn't have text burned in perfectly yet.
+     Since I generated an image WITH text, I might just hide this visually 
+     BUT the prompt text might be garbled (AI is bad at text sometimes).
+     safest bet: Overlay clean HTML text on top of the image or below it.
+  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    text-shadow: 3px 3px 0px var(--color-black);
+    pointer-events: none;
+    /* Let clicks pass through */
+}
+
+.main-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--color-hot-pink);
+    margin: 0;
+    -webkit-text-stroke: 1px white;
+}
+
+.greenwashing-text {
+    color: var(--color-lime);
+    display: block;
+    font-size: 3.5rem;
+    transform: scaleY(1.2);
+}
+
+.subtitle {
+    font-family: var(--font-body);
+    background: var(--color-black);
+    color: var(--color-neon-yellow);
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    transform: rotate(-3deg);
+}
+
+.hero-marketing-bar {
+    margin-top: 1rem;
+    background: var(--color-coke-red);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: 2px solid var(--color-neon-yellow);
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(15deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(15deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(15deg) scale(1);
+    }
+}

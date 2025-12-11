@@ -1,0 +1,62 @@
+:root {
+  /* Fonts - defaulting to system fonts that match the 'ugly' aesthetic */
+  --font-heading: 'Impact', 'Arial Black', sans-serif;
+  --font-body: 'Comic Sans MS', 'Chalkboard SE', 'Arial', sans-serif;
+
+  /* Color Palette - Maximum 2000s Clash */
+  --color-coke-red: #F40009;
+  --color-neon-yellow: #FFFF00;
+  --color-hot-pink: #FF69B4;
+  --color-cyan: #00FFFF;
+  --color-lime: #32CD32;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-cd-gray: #c0c0c0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  /* Tacky diagonal stripe background */
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-hot-pink),
+    var(--color-hot-pink) 20px,
+    var(--color-cyan) 20px,
+    var(--color-cyan) 40px
+  );
+  color: var(--color-black);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Scrollbar styling (chrome/safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-neon-yellow);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-coke-red);
+  border: 2px solid var(--color-neon-yellow);
+}
+
+/* Utils */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
