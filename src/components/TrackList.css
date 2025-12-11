@@ -19,31 +19,3 @@
     color: var(--color-cyan);
     text-shadow: 2px 2px var(--color-hot-pink);
 }
-
-.barcode {
-    background: white;
-    color: black;
-    width: 150px;
-    padding: 5px;
-    text-align: center;
-    margin: 2rem auto;
-    font-family: monospace;
-    transform: rotate(90deg);
-    position: absolute;
-    right: -40px;
-    bottom: 50px;
-}
-
-.barcode-lines {
-    height: 40px;
-    background: repeating-linear-gradient(90deg,
-            black 0px,
-            black 2px,
-            white 2px,
-            white 4px,
-            black 4px,
-            black 5px,
-            white 5px,
-            white 9px);
-    margin-bottom: 2px;
-}

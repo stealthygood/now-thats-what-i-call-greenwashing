@@ -16,11 +16,7 @@ const TrackList = ({ tracks, onTrackClick }) => {
                     />
                 ))}
             </div>
-            <div className="barcode">
-                {/* Simple CSS barcode effect */}
-                <div className="barcode-lines"></div>
-                <p>7 23456 78901 2</p>
-            </div>
+
         </div>
     );
 };
