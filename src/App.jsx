@@ -17,6 +17,7 @@ const TRACKS = [
     duration: "3:42",
     description: "In 1990, Coca-Cola pledged to use 25% recycled content in their bottles. That promise quietly disappeared. They made similar pledges in 2000, 2010, and 2020. Each time, they failed to meet them. Why recycle when virgin plastic is cheaper?",
     source: "Break Free From Plastic & TalkingTrash.com",
+    sourceUrl: "https://talking-trash.com/",
     audioEmbedUrl: "https://suno.com/embed/87b771d1-8153-4f67-94ee-3e8296fb8711"
   },
   {
@@ -27,6 +28,7 @@ const TRACKS = [
     duration: "2:15",
     description: "Coca-Cola launched the 'PlantBottle' claiming it was eco-friendly. In reality, it was still up to 70% petroleum-based plastic and indistinguishable from regular PET in oceans. It was a marketing stunt, not a solution.",
     source: "The Guardian",
+    sourceUrl: "https://www.theguardian.com/environment/2021/may/22/coca-cola-plantbottle-marketing-hype-green-solution",
     audioEmbedUrl: "https://suno.com/embed/db1c1c7a-971e-437d-bcb5-bf88cb60a9c7"
   },
   {
@@ -37,6 +39,7 @@ const TRACKS = [
     duration: "4:01",
     description: "Coke's 'World Without Waste' campaign promises to collect one bottle for every one sold by 2030. Independent audits show they are nowhere close to this goal, while their plastic production actually INCREASED.",
     source: "Reuters Investigation",
+    sourceUrl: "https://www.reuters.com/investigates/special-report/plastic-pollution-coca-cola-recycling/",
     audioEmbedUrl: "https://suno.com/embed/3b212721-4ce0-4b6a-86b7-cf9f4e8d4d90"
   },
   {
@@ -46,7 +49,8 @@ const TRACKS = [
     year: "2019-2023",
     duration: "5:00",
     description: "For five consecutive years, the Break Free From Plastic global brand audit has named Coca-Cola the world's #1 plastic polluter, producing more waste than the next two top polluters (PepsiCo and Nestle) combined.",
-    source: "Break Free From Plastic Global Brand Audit"
+    source: "Break Free From Plastic Global Brand Audit",
+    sourceUrl: "https://brandaudit.breakfreefromplastic.org/"
   },
   {
     id: 5,
@@ -56,6 +60,7 @@ const TRACKS = [
     duration: "∞",
     description: "While publicly promoting recycling, Coca-Cola has spent millions lobbying against Bottle Bills (Deposit Return Schemes) which are proven to increase recycling rates. They claim to support sustainability while funding groups that fight regulation.",
     source: "The Intercept",
+    sourceUrl: "https://theintercept.com/2019/10/18/coca-cola-recycling-plastics-pollution/",
     audioEmbedUrl: "https://suno.com/embed/ba25fc16-dbda-4009-bc06-e32cb06ca8f3"
   }
 ];

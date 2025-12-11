@@ -42,7 +42,19 @@ const TrackModal = ({ track, onClose }) => {
                         <p>{track.description}</p>
 
                         <div className="sources-box">
-                            <strong>Source:</strong> {track.source}
+                            <strong>Source:</strong>{' '}
+                            {track.sourceUrl ? (
+                                <a
+                                    href={track.sourceUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="source-link"
+                                >
+                                    {track.source}
+                                </a>
+                            ) : (
+                                track.source
+                            )}
                         </div>
                     </div>
                 </div>

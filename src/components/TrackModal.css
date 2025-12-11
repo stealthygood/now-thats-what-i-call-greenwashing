@@ -136,6 +136,16 @@
     padding-top: 0.5rem;
 }
 
+.source-link {
+    color: var(--color-coke-red);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.source-link:hover {
+    color: var(--color-black);
+}
+
 .modal-footer {
     padding: 1rem;
     background: #eee;
